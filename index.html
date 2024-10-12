@@ -1,3 +1,87 @@
-<h1>This is my homepage</h1>
-<h1>My link-in-bio</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Page Layout</title>
+    <style>
+        * {
+            border: 1px red dashed;
+        }
 
+        body {
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .main-container {
+            width: 400px;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .image-row {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .name-row {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .social-icons-row {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .links-row {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .links-row a {
+            text-align: center;
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main-container">
+        <div class="image-row">
+            <!-- Avatar image goes here -->
+            <img src="your-image.jpg" alt="Avatar" width="100">
+        </div>
+
+        <div class="name-row">
+            <!-- Name goes here -->
+            John Doe
+        </div>
+
+        <div class="social-icons-row">
+            <!-- Social icons go here -->
+            <a href="#">Twitter</a> | <a href="#">LinkedIn</a>
+        </div>
+
+        <div class="links-row">
+            <!-- Links go here -->
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+        </div>
+    </div>
+
+</body>
+</html>
